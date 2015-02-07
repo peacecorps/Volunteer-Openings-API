@@ -61,7 +61,7 @@ region	| Filter by region/s.(e.g. ?region=africa) Note: You may filter by multip
 sector	| Filter by sector/s. (e.g. ?sector=health) Note: You may filter by multiple sectors. The following arguments in the URL will return all job opening within the ‘health’ sector and ‘education’ sector. ?sector=health&sector=education	| Use the following keywords for the six Peace Corps sectors: agriculture, community economic development, education, environment, health, youth in development
 language	| Filter by language/s. (e.g. ?langauge=spanish) Note: You may filter by multiple languages. The following arguments in the URL will return all job openings with either a Spanish or French requirement. ?langauge=spanish&language=french. Use the following keywords for language requirements: french, spanish, romance (any romance language), russian, other, none (no language requirement)
 keyword	| Filter by keyword. (e.g. ?keyword=malaria) Note: You may NOT filter by multiple keyword arguments, however you may search for multiple consecutive words using one keyword argument in the URL. The following argument in the URL will return all job openings with the words “malaria prevention.” (e.g. ?keyword=malaria prevention) The following fields are keyword searchable: country, region, sector, title, project description, desired skills, required skills, language skills comments, living conditions comments. | Any keyword.
-featured	| Filter by featured job openings. (e.g. ?featured=true) | Use ‘true’ or ‘false’
+featured | Filter by featured job openings. (e.g. ?featured=true) | Use ‘true’ or ‘false’
 couples	| Filter by couples accepted. (e.g. ?couples=true) | Use ‘true’ or ‘false’
 
 ## Request Example
@@ -70,7 +70,8 @@ http://www.peacecorps.gov /api/v1/openings/?country=cambodia&keyword=teacher
 
 #### Response Example
 
-> {
+```json
+{
 count: 2,
 next: null,
 previous: null,
@@ -121,6 +122,7 @@ opening_url: "http://www.peacecorps.gov/openings/2930br/"
 }
 ]
 }
+```
 
 ## GET /api/v1/openings/{req_id}
 
@@ -131,7 +133,9 @@ Returns a single volunteer job opening according to what ID is added to the URL.
 http://www.peacecorps.gov/api/v1/openings/3164br/
 
 #### Response Example
-> {
+
+```json
+{
 title: "Healthy Schools Coordinator",
 req_id: "3164br",
 country: "guatemala",
@@ -153,7 +157,7 @@ country_site_url: "http://guatemala.peacecorps.gov",
 country_flag_image: "",
 opening_url: "http://www.peacecorps.gov/openings/3164br/"
 }
-
+```
 
 
 
