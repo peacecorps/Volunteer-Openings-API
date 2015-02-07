@@ -1,12 +1,14 @@
 
 # Volunteer Job Openings REST API
 #### Version 1.0
-	
 
+http://www.peacecorps.gov/api/v1/openings/
 
 ## Peace Corps Volunteer Job Openings Dataset
 
 Peace Corps service is a personal and professional experience like no other. Volunteers live and work abroad for two years sharing their skills and working to make a difference in their communities. There are a wide variety of Volunteer openings in more than 60 countries that have asked for assistance. The dataset this API exposes is all current Peace Corps Volunteer Job Openings. An interactive list of volunteer job openings can be found on the Peace Corps website here.
+
+Peace Corps has an Openings browser that can be found here: http://www.peacecorps.gov/openings/search/
 
 ## Volunteer Job Openings API
 
